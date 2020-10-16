@@ -14,7 +14,8 @@
 - 3.执行 train.sh 开始模型训练，参数自行调整
 
 ## 模型预测
-- 1.执行 predict.sh 即可，运行完会生成 test_results.tsv 文件，即为提交结果文件
+- 1.执行 predict.sh 即可，运行完会生成 test_results.tsv 文件，即为提交结果文件 。base分数70分左右。
+
 
 ## 数据构造原理如图
 ![image](https://github.com/syzong/images/blob/master/bert_input.png)
