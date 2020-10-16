@@ -27,4 +27,4 @@ tensorflow >= 1.11.0   # CPU Version of TensorFlow.
 tensorflow-gpu  >= 1.11.0  # GPU version of TensorFlow.
 ```
 
-## 麻烦顺手Star 😄
+## 麻烦顺手给个Star 😄
