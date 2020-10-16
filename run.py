@@ -243,7 +243,7 @@ def main(_):
                           %(num_train_steps, current_step, train_loss , acc, recall, prec, f_beta))
 
                     current_step += 1
-                    if current_step % FLAGS.save_checkpoints_steps == 0:
+                    if current_step % FLAGS.save_checkpoints_steps == 0 and epoch > 5:
                         eval_losses = []
                         eval_predictions_all = []
                         label_ids_all = []
