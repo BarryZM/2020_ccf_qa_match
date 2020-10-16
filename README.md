@@ -20,11 +20,10 @@
 ## 数据构造原理如下
 ![image](https://github.com/syzong/images/blob/master/bert_input.png)
 
+## 麻烦顺手给个Star 😄
 
 ## requirements:
 ```
 tensorflow >= 1.11.0   # CPU Version of TensorFlow.
 tensorflow-gpu  >= 1.11.0  # GPU version of TensorFlow.
 ```
-
-## 麻烦顺手给个Star 😄
