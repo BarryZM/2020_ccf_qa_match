@@ -43,9 +43,7 @@ flags.DEFINE_string("init_checkpoint", None, "Initial checkpoint (usually from a
 flags.DEFINE_bool("do_lower_case", True, "Whether to lower case the input text. Should be True for uncased models and False for cased models.")
 flags.DEFINE_integer("max_seq_length", 128, "The maximum total input sequence length after WordPiece tokenization. Sequences longer than this will be truncated, and sequences shorter than this will be padded.")
 flags.DEFINE_bool("do_train", False, "Whether to run training.")
-flags.DEFINE_bool("do_load_train", False, "Whether to run incremental training.")
 flags.DEFINE_bool("do_predict", False, "Whether to run the model in inference mode on the test set.")
-flags.DEFINE_bool("train_arm", False, "Whether arm training.")
 flags.DEFINE_integer("train_batch_size", 32, "Total batch size for training.")
 flags.DEFINE_integer("eval_batch_size", 8, "Total batch size for eval.")
 flags.DEFINE_integer("predict_batch_size", 8, "Total batch size for predict.")
@@ -206,7 +204,7 @@ def main(_):
 
         z = list(zip(inputs_ids, input_masks, segment_ids, label_all))
         random.shuffle(z)
-        pos = int(len(z) * 0.9)
+        pos = int(len(z) * 0.8)
 
         train_in_ids, train_in_masks, train_seg_ids, train_lab_ids = zip(*(z[:pos]))
         dev_in_ids, dev_in_masks, dev_seg_ids, dev_lab_ids = zip(*(z[:pos]))
