@@ -7,7 +7,7 @@
 
 
 ## 训练步骤
-- 1.将bert的预训练模型放在本地，自行指定目录
+- 1.将bert的中文预训练模型放在本地，自行指定目录。下载路径为：https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
 
 - 2.train.sh脚本配置预训练模型目录，如：BERT_BASE_DIR=/home/syzong/nlp_deeplearning/chinese_L-12_H-768_A-12
 
